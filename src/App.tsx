@@ -10,7 +10,7 @@ import Home from 'src/pages/home/Home';
 import PropertyDetails from 'src/pages/details/PropertyDetails';
 import Search from 'src/pages/search/Search';
 import NotFound from 'src/pages/404/NotFound';
-import MakeBooking from 'booking/MakeBooking';
+import MakeBooking from 'src/pages/booking/MakeBooking';
 
 const progress = new ProgressBar({
   size: 4,
