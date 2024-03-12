@@ -7,11 +7,11 @@ import '../styles/global.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { FavouriteContextProvider } from './context/FavouritesContext';
 
-const siteName =  process.env.NODE_ENV !== 'development' ? '/staybae/' : '/'
+const siteName = process.env.NODE_ENV !== 'development' ? '/staybae/' : '/';
 
 async function enableMocking() {
   // if (process.env.NODE_ENV !== 'development') {
-  //   return;
+  //   return;npm
   // }
 
   const { worker } = await import('./__mocks__/browser');
@@ -35,9 +35,7 @@ enableMocking().then(() => {
   ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
       <FavouriteContextProvider>
-        <BrowserRouter
-          basename={ siteName
-          }>
+        <BrowserRouter basename={siteName}>
           <App />
         </BrowserRouter>
       </FavouriteContextProvider>
