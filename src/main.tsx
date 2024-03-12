@@ -24,7 +24,7 @@ async function enableMocking() {
     serviceWorker: {
       url:
         process.env.NODE_ENV !== 'development'
-          ? '/staybae-ui/mockServiceWorker.js'
+          ? '/staybae/mockServiceWorker.js'
           : '/mockServiceWorker.js',
     },
     onUnhandledRequest: 'bypass',
